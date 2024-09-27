@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <script>
+            var divelement = React.createElement("div", null);
+            var h2element = React.createElement("h2", null,"heading");
+            var p = React.createElement("p", null,"paragraph");
+            ReactDOM.render(divelement, document.querySelector("body"));
+            ReactDOM.render([h2element, p],document.querySelector("div"));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+    
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<link rel="stylesheet" href="amazon.css">
+<head>
+
+</head>
+<body>
+    <div class="container"></div>
+    <script>
+        var nameReactElement =  React.createElement("h3", null, "Brand Name");
+        var divname = React.createElement("div", null,nameReactElement);
+
+        var bndnames = React.createElement("div", {id:"nik"},[
+            React.createElement("a", null, "Home"),
+            React.createElement("a", null, "Electronics"),
+            React.createElement("a", null, "Jewelery"),
+            React.createElement("a", null, "Mens"),
+            React.createElement("a", null, "Womens"),
+        ]);
+        var bndnames = React.createElement("div", null, bndnames);
+
+        var btn = React.createElement("button",{id:"clr"},"Log Out");
+        var btnDiv = React.createElement("div",null,btn);
+
+        ReactDOM.render([divname, bndnames,btnDiv], document.querySelector(".container"))
+            
+    </script>
+    </body>
+    </html>

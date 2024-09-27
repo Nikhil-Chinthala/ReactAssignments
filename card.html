@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <link rel="stylesheet" href="card.css">
+    </head>
+    <body>
+        <div class="card"></div>
+        <script>
+            var imgReactElement = React.createElement("img",
+            {src:"https://cricketersbiography.com/wp-content/uploads/2023/12/Rohit-Sharma-in-ODIs.webp",
+                width:"270px",
+                height:"340px",
+            });
+            var divimg = React.createElement("div",null,imgReactElement);
+
+            var h2ReactElement = React.createElement("h2",null,"Rohit Sharma");
+            var h2div = React.createElement("div",null,h2ReactElement);
+
+            var pReactElement = React.createElement("p",null,"Rohit Sharma is an Fantastic Hitter");
+            var pdiv = React.createElement("div",null,pReactElement);
+
+            var btnReactElement = React.createElement("button",null,"click");
+            var btnDiv = React.createElement("div",null,btnReactElement);
+
+            ReactDOM.render([divimg,h2div,pdiv,btnDiv], document.querySelector(".card"));
+
+            
+        </script>
+    </body>
+</html>
